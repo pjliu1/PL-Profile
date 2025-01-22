@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;700&display=swap');
+
+    /* General Container Styling */
+    #container {
+      height: 100vh;
+      width: 100vw;
+      background-color: #E3E4FA;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    /* Card Styling */
+    #card {
+      background-color: white;
+      height: 550px;
+      width: 400px;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    #card-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      background-image: url("https://www.pharmacist.com/Portals/0/EasyDNNNews/2158/images/Liu-for-p.com-600-600-p-L-97.jpg");
+      background-size: cover;
+      background-position: center;
+      background-size: 80%;
+    }
+
+    #card-bottom {
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Text Styling */
+    #name, #title, #school {
+      margin: 10px 0;
+    }
+
+    #name {
+      color: black;
+      font-size: 30px;
+      font-family: 'Bodoni Moda', serif;
+    }
+
+    #title {
+      color: #636363;
+      font-size: 18px;
+      font-family: 'Bodoni Moda', serif;
+    }
+
+    #school {
+      color: #636363;
+      font-size: 18px;
+      font-family: 'Bodoni Moda', serif;
+    }
+
+    /* Icon Section Styling */
+    #icons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .icon:hover {
+      transform: scale(1.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="card">
+      <div id="card-top"></div>
+      <div id="card-bottom">
+        <h1 id="name">Priscilla Liu</h1>
+        <h2 id="title">PharmD Candidate 2025</h2>
+        <h3 id="school">University of Kansas</h3>
+        <div id="icons">
+          <!-- Dot Card Link -->
+          <a href="https://dot.cards/pjliu" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" alt="Dot Card" class="icon">
+          </a>
+          <!-- LinkedIn Link -->
+          <a href="https://www.linkedin.com/in/priscillaliu1/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
